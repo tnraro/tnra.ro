@@ -9,9 +9,7 @@ on:
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
-    permissions:
-      packages: write
-      contents: read
+    permissions: write-all
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v2
