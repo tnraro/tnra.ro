@@ -1,5 +1,5 @@
 import { Avatar } from "domains/avatar/components/Avatar";
-import { Experience } from "domains/experience/components/Experience";
+import { Project } from "domains/project/components/Project";
 import profileSrc from "assets/profile.webp";
 import coopsSrc from "assets/coops.webp";
 import srSrc from "assets/sr.webp";
@@ -30,7 +30,7 @@ function App() {
         <p>자기소개 로렘 입숨 라로바로 라로바보 라로바보 라로바보</p>
         <article>
           <h2>프로젝트</h2>
-          <Experience
+          <Project
             title="coops"
             link="https://github.com/hoshi-hitsuji/coops"
             date={["2021-04", "2021-06"]}
@@ -43,7 +43,7 @@ function App() {
             ]}
             stack={["Next.js", "Redis", "Docker"]}
           />
-          <Experience
+          <Project
             title="psh"
             link="https://github.com/hoshi-hitsuji/psh"
             date={["2020-11", "2020-12"]}
@@ -57,7 +57,7 @@ function App() {
             ]}
             stack={["Next.js", "MQTT", "GraphQL"]}
           />
-          <Experience
+          <Project
             title="소프트웨어 래스터라이저"
             link="https://github.com/tnraro/graphics"
             date={["2020-07"]}

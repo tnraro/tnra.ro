@@ -1,5 +1,5 @@
-import classes from "./Experience.module.css";
-export interface ExperienceProps {
+import classes from "./Project.module.css";
+export interface ProjectProps {
   title: string,
   link: string,
   date: string[],
@@ -7,9 +7,9 @@ export interface ExperienceProps {
   stack: string[],
   image?: string,
 }
-export function Experience(props: ExperienceProps) {
+export function Project(props: ProjectProps) {
   return (
-    <article className={classes.experience}>
+    <article className={classes.project}>
       <header>
         <h3><a href={props.link} target="_blank">{props.title}</a></h3>
         <time dateTime={props.date.join("/")}>{props.date.join("–")}</time>
