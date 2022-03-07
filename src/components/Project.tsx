@@ -16,7 +16,13 @@ export function Project(props: ProjectProps) {
       {props.image ? (
         <figure className="screenonly">
           <a href={props.image} target="_blank" tabIndex={-1}>
-            <img src={props.image} alt={props.title} loading="lazy" />
+            <img
+              src={props.image}
+              alt={props.title}
+              width={180}
+              height={100}
+              loading="lazy"
+            />
           </a>
         </figure>
       ) : null}
