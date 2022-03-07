@@ -1,12 +1,8 @@
-.project {
-  margin: var(--space-wgap) 0;
-}
-
 .project header {
   display: flex;
   align-items: baseline;
-  gap: var(--space-gap);
-  margin: var(--space-gap) 0;
+  gap: var(--space-hgap);
+  margin: var(--space-hgap) 0;
 }
 
 .project h3 {
