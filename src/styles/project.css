@@ -10,8 +10,9 @@
   text-transform: uppercase;
 }
 
-.project p {
-  margin: 0;
+.project ul {
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 .stack {
