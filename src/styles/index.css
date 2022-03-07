@@ -1,3 +1,6 @@
+@import "avatar.css";
+@import "project.css";
+
 :root {
   --color-text: hsl(210deg 3% 30%);
   --color-link: hsl(210deg 70% 35%);

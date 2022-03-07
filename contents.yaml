@@ -11,7 +11,7 @@ projects:
   date:
   - 2021-04
   - 2021-06
-  image: coops.webp
+  image: assets/coops.webp
   content: |-
     - 게이머를 위한 익명 음성 채팅 서비스
     - 레이드, 랜덤 팀 매치 등 일시적으로 맺는 협력 관계에서 익명화를 통해 개인정보 유출을 최소화할 수 있는 간편한 음성 채팅 서비스
@@ -55,7 +55,7 @@ projects:
   link: https://github.com/tnRaro/graphics
   date:
   - 2020-07
-  image: sr.webp
+  image: assets/sr.webp
   content: |-
     - 3D 모델을 CPU로 렌더링하는 소프트웨어 래스터라이저를 JavaScript로 구현
     - 수학적 원리 학습과 구현을 목표로 한 개인 프로젝트

@@ -1,35 +1,30 @@
-import classes from "./Project.module.css";
-export interface ProjectProps {
-  title: string,
-  link: string,
-  date: string[],
-  text: string[],
-  stack: string[],
-  image?: string,
-}
+import React from "https://esm.sh/react@17.0.2";
+import type { Project } from "../contents.ts"
+import { Time } from "./Time.tsx";
+import ReactMarkdown from "https://esm.sh/react-markdown@8.0.0?no-check";
+
+type ProjectProps = Project;
 export function Project(props: ProjectProps) {
   return (
-    <article className={classes.project}>
+    <article className="project">
       <header>
         <h3><a href={props.link} target="_blank">{props.title}</a></h3>
-        <time dateTime={props.date.join("/")}>{props.date.join("–")}</time>
+        <Time date={props.date} />
         <div className="spacer" />
         <a className="printonly" href={props.link} target="_blank">{props.link}</a>
       </header>
       {props.image ? (
         <figure className="screenonly">
           <a href={props.image} target="_blank" tabIndex={-1}>
-            <img src={props.image} alt={props.title} />
+            <img src={props.image} alt={props.title} loading="lazy" />
           </a>
         </figure>
       ) : null}
-      <ul>
-        {props.text.map((text) => (
-          <li key={text}>{text}</li>
-        ))}
-      </ul>
+      <ReactMarkdown>
+        {props.content}
+      </ReactMarkdown>
       <aside>
-        <ul className={classes.stack}>
+        <ul className="stack">
           {props.stack.map((stack) => (
             <li key={stack}>{stack}</li>
           ))}

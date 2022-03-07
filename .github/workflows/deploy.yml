@@ -12,12 +12,10 @@ jobs:
     permissions: write-all
     steps:
     - uses: actions/checkout@v2
-    - uses: actions/setup-node@v2
+    - uses: actions/setup-deno@v1
       with:
-        node-version: "16"
-        cache: "npm"
-    - run: npm ci
-    - run: npm run build
+        deno-version: "1.19.2"
+    - run: deno run --allow-read --allow-write src/generate.tsx
     - uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}

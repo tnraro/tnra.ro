@@ -1,0 +1,6 @@
+---
+entrypoint: src/index.html
+output: dist
+copies:
+- assets
+- src/styles

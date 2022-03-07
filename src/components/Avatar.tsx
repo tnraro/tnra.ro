@@ -1,4 +1,4 @@
-import classes from "./Avatar.module.css";
+import React from "https://esm.sh/react@17.0.2";
 export interface AvatarProps {
   src: string,
   alt: string,
@@ -7,7 +7,7 @@ export interface AvatarProps {
 export function Avatar(props: AvatarProps) {
   return (
     <img
-      className={classes.avatar}
+      className="avatar"
       src={props.src}
       alt={props.alt}
       width={props.size}
