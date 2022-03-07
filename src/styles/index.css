@@ -12,8 +12,8 @@
   --font-size: 16px;
   --transition: 0.1s cubic-bezier(0.3, 0.32, 0.33, 1); /* TODO */
   --container-width: 100%;
-  --space-padding: 4px 8px;
-  --space-margin: -4px -8px;
+  --space-padding: 2px 8px;
+  --space-margin: -2px -8px;
   --space-gap: 16px;
   --space-wgap: 32px;
   --radius: 4px;
@@ -74,6 +74,11 @@ figure {
 
 ::selection {
   background: var(--color-background);
+}
+
+ul {
+  padding-inline-start: var(--space-wgap);
+  list-style: disc;
 }
 
 /* asdasd */
