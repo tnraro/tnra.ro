@@ -1,0 +1,54 @@
+.project {
+  margin: var(--space-wgap) 0;
+}
+
+.project header {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-gap);
+  margin: var(--space-gap) 0;
+}
+
+.project h3 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.project p {
+  margin: 0;
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 8px;
+}
+
+.stack li {
+  border-radius: var(--radius);
+  pointer-events: none;
+  background: var(--color-background);
+  font-size: 0.9em;
+  padding: var(--space-padding);
+}
+
+.project figure {
+  float: right;
+}
+
+.project figure a:hover {
+  all: revert;
+}
+
+.project figure img {
+  height: 100px;
+  object-fit: cover;
+}
+
+.education {
+  display: flex;
+  gap: var(--space-gap);
+}
