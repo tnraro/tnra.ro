@@ -1,8 +1,6 @@
 import React from "https://esm.sh/react@17.0.2";
 import { Avatar } from "../components/Avatar.tsx";
 import type { AppProps } from "../pages/App.tsx";
-import { Projects } from "./Projects.tsx";
-import { Educations } from "./Educations.tsx";
 type ProfileProps = AppProps;
 export function Profile(props: ProfileProps) {
   return (
@@ -14,21 +12,19 @@ export function Profile(props: ProfileProps) {
       <address>
         <ul>
           <li>
-            <a href="mailto:deokji53@gmail.com">deokji53@gmail.com</a>
+            <a href={`mailto:${props.contents.profile.email}`}>{props.contents.profile.email}</a>
           </li>
           <li>
-            <a href="tel:010-2623-2702">010-2623-2702</a>
+            <a href={`tel:${props.contents.profile.tel}`}>{props.contents.profile.tel}</a>
           </li>
           <li>
-            <a href="https://tnra.ro" target="_blank">https://tnra.ro/</a>
+            <a href={props.contents.profile.link} target="_blank">{props.contents.profile.link}</a>
           </li>
           <li>
-            <a href="https://github.com/tnraro" target="_blank">github.com/tnraro</a>
+            <a href={`https://github.com/${props.contents.profile.github}`} target="_blank">github.com/{props.contents.profile.github}</a>
           </li>
         </ul>
       </address>
-      <Projects contents={props.contents} />
-      <Educations contents={props.contents} />
     </article>
   );
 }
