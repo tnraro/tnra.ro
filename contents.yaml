@@ -14,7 +14,7 @@ projects:
   image: assets/coops.webp
   content: |-
     - 게이머를 위한 익명 음성 채팅 서비스
-    - 레이드, 랜덤 팀 매치 등 일시적으로 맺는 협력 관계에서 익명화를 통해 개인정보 유출을 최소화할 수 있는 간편한 음성 채팅 서비스
+    - 레이드, 랜덤 팀 매치 등 일시적으로 맺는 협력 관계에서 익명성으로 개인정보 유출을 최소화할 수 있는 간편한 음성 채팅 서비스
     - 웹 디자인과 개발을 담당
     - [Figma로 디자인](https://www.figma.com/file/3DEVGLyLa21yYCE7kU8Nr0/coops?node-id=12%3A806)
     - 초기에 chakra-ui로 스타일링 했으나, 테마와 컴포넌트를 제한적으로 쓸 수 있고, TypeScript 친화적이지 않아서 stitches로 변경
